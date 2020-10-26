@@ -1,0 +1,59 @@
+@vw : 100rem;
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 100%;
+}
+.big-index-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .p2_Bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        img {
+            height: 100%;
+        }
+    }
+}
+.title-box {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 828/@vw;
+    div {
+       margin-right: 60/@vw;
+       &:nth-of-type(2) {
+           transform: translateY(-72/@vw);
+       }
+       &:last-of-type {
+            margin-right: 0;
+       }
+    }
+}
+.bottom-button {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 34/@vw;
+    .p2_5 {
+        width: 485/@vw;
+    }
+    .p2_4 {
+        width: 457/@vw;
+    }
+}
